@@ -85,6 +85,10 @@ section #main p, section #main li, .card-body p {
 }
 
 
+#main table {
+    font-variant-numeric: oldstyle-nums;
+}
+
 #main ul,li , .table ul,li { 
     /* list-style-type: none; */
     list-style-position: inside;
@@ -163,6 +167,7 @@ table#conversion-chart {
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
+    font-variant-numeric: normal;
 }
 
 table#conversion-chart th, table#conversion-chart tr {
