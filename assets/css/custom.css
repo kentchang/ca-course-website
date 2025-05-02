@@ -39,7 +39,7 @@ nav, #hero, footer, .accordion-header, .alert, .btn, th, td h4, td h5 {
 }
 
 #hero p > a {
-    vertical-align: top;
+    /* vertical-align: top; */
     font-size: 102%;
 }
 
