@@ -1,0 +1,210 @@
+nav, #hero, footer, .accordion-header, .alert, .btn, th, td h4, td h5 {
+    font-family: var(--coach-font-sans-serif);
+}
+
+.navbar-default .navbar-brand {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+.normalfont {
+    font-family: equity_text_a, serif;
+}
+
+.navbar-default.navbar-default-collapse .navbar-brand {
+    opacity: 1;
+    visibility: visible;
+}
+
+.small-caps {
+    font-family: equity_caps_a;
+    font-variant:  small-caps;
+    text-transform: lowercase;
+}  
+
+
+.text-light-gray {
+    color: #999999 !important;
+}
+
+/* h1, h2, h3 {
+
+} */
+
+#hero h1 {
+    font-family: "Roslindale";
+    font-size: 3em;
+    font-weight: 200;        
+}
+
+#hero p > a {
+    vertical-align: top;
+    font-size: 102%;
+}
+
+section h2 {
+    font-size: 1.05rem;
+    font-family: CooperHewitt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+section #main p, section #main li, .card-body p {
+    --coach-body-color: rgba(0, 0, 0, 0.87);    
+    color: var(--coach-body-color);
+    font-family: equity_text_a, serif;
+    font-size: 1.12rem;
+    font-variant-numeric: oldstyle-nums;
+    line-height: 1.8rem;
+}
+
+.accordion-body {
+    --coach-body-color: rgba(0, 0, 0, 0.87);    
+    color: var(--coach-body-color);
+    font-family: equity_text_a, serif;
+    font-size: 1.05rem;
+    font-variant-numeric: oldstyle-nums;
+    line-height: 1.8rem;    
+}
+
+.table>:not(caption)>*>* {
+    color: rgba(0, 0, 0, 0.87);   
+}
+
+#main h3 {
+    /* font-family: var(--coach-font-sans-serif);
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;     */
+    font-family: equity_caps_a !important;
+    text-transform: lowercase;
+    font-weight: normal; 
+    font-size: 1.2rem;
+}
+
+
+#main ul,li , .table ul,li { 
+    /* list-style-type: none; */
+    list-style-position: inside;
+    margin: 0;
+    padding: 0; 
+    margin-left: 4px;
+    margin-right: 0px;
+}
+
+/* .table ul,li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: auto !important;
+    margin: 0;
+    padding: 0;     
+} */
+
+/* Override nowrap to allow wrapping in list items */
+#main li, .table li {
+    white-space: normal !important;
+    text-wrap: wrap !important;  /* modern browsers */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    color: rgba(0, 0, 0, 0.87);    
+
+    list-style-position: outside;  /* bullet on left */
+    list-style-type: disc;         /* use bullet */
+    text-indent: 0.5em;
+    margin-left: 1em;
+    line-height: 1.5;    
+}
+
+.accordion-body li {
+    text-indent: 0!important;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+}
+
+#main > li:before, .table li:before {
+    content: "";
+    margin-left: -0.5rem;
+}
+
+thead > tr > th {
+    font-family: var(--coach-font-sans-serif);
+    font-size: 1.2rem;
+    /* font-weight: normal; */
+    /* text-align: left; */
+    /* vertical-align: middle; */
+}
+
+td > div.card-body > p {
+    margin: 0;
+    padding: 0.5rem 0;
+    line-height: 1.5;    
+    font-size: 1rem;
+    white-space: normal !important;
+    text-wrap: wrap !important;  /* modern browsers */
+    overflow-wrap: break-word;
+    word-break: break-word;    
+}
+
+td > div.card-body > p:last-child {
+    margin: 0;
+    padding-bottom: 0;
+    line-height: 1.5;    
+    font-size: 1rem;
+}
+
+table#conversion-chart {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+table#conversion-chart th, table#conversion-chart tr {
+    line-height: 0;
+}
+
+#grade-items ul,li { 
+    /* list-style-type: none; */
+    list-style-position: inside;
+    margin: 0;
+    padding: 0; 
+    /* margin-left: 4px; */
+    margin-right: 0px;
+}
+
+#grade-items ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#grade-items li {
+    list-style-type: none;
+
+    white-space: normal !important;
+    text-wrap: wrap !important;  /* modern browsers */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    color: rgba(0, 0, 0, 0.87);    
+
+    list-style-position: outside;  /* bullet on left */
+    /* text-indent: 0.5em; */
+    margin-left: 1em;
+    line-height: 1.5;      
+}
+
+
+#grade-items li:before {
+    content: "";
+    margin-left: -1.2rem;
+}
+
+.footer .list-group .list-group-item {
+    margin-bottom: 8px;
+    line-height: 1.1;
+}
