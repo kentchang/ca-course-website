@@ -124,7 +124,7 @@ section #main p, section #main li, .card-body p {
     line-height: 1.5;    
 }
 
-#schedule_notes li {
+p#schedule_notes li {
     text-indent: 0pt !important;
 }
 
