@@ -39,10 +39,20 @@
 	<body>
 		<!-- header -->
 		<!-- start navbar -->
+
+	<!-- Top bar -->
+<div id="site-topbar" class="topbar fixed-top">
+	<div class="container">
+		<div class="alert alert-primary alert-dismissible fade show mb-0 rounded-0" role="alert">
+			<i class="fa-solid fa-circle-exclamation"></i> <b>Announcement</b>: Our 9/2 lecture will meet in Room <b>210 South Hall</b> instead of Room 205, to ensure enough space for everyone.
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	</div>
+</div>
 <header>
 	<nav class="navbar navbar-expand-lg navbar-default fixed-top border-3 border-top border-primary navbar-dark">
 		<!-- navigation start -->
-		<div class="container">
+
 			<a class="navbar-brand text-white" href="./index.html">
 				<!-- <img src="./assets/images/logo.svg" alt="" /> -->
 				INFO 290: Cultural Analytics
@@ -97,7 +107,7 @@
 		<main>
 			<!--start hero section-->
 			<section id="hero" class="bg-dark right-slant-shape pt-lg-8 py-8 pb-lg-0">
-				<div class="container pb-2">
+				<div class="container pt-5 pb-2">
 					<div class="row justify-content-center">
 						<div class="col-xxl-8 col-lg-10 col-md-12 col-12">
 							<div class="mb-2 mb-lg-8">
@@ -124,9 +134,6 @@
 									<i class="fas fa-calendar icon-shape pe-1"></i>
 									Schedule and topics 
 								</a>
-								
-
-								
 								<!-- <a
 									class="popup-youtube icon-shape rounded-circle btn-play icon-md bg-secondary text-white me-1 text-decoration-none font-12"
 									href="https://www.youtube.com/watch?v="
@@ -366,5 +373,29 @@
 <!-- Theme JS -->
 <script src="./assets/js/theme.min.js"></script>
 <script src="./assets/js/vendors/validation.js"></script>
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const bar  = document.getElementById('site-topbar');
+
+  function updateOffset() {
+    if (!bar) return;
+    const visible = bar.offsetParent !== null && bar.style.display !== 'none';
+    root.style.setProperty('--topbar-offset', visible ? (bar.offsetHeight + 'px') : '0px');
+  }
+
+  window.addEventListener('load',   updateOffset);
+  window.addEventListener('resize', updateOffset);
+
+  // When the alert is dismissed, remove the offset
+  document.addEventListener('closed.bs.alert', function (e) {
+    if (e.target.closest('#site-topbar')) {
+      bar.style.display = 'none';
+      updateOffset();
+    }
+  });
+})();
+</script>
 	</body>
 </html>
